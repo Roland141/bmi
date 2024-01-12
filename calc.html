@@ -9,26 +9,41 @@
     <style>
         html,body {
             background-color: slategrey;
-            width: 100%;
-            height: 100%;
+            
         }
         .container {
             text-align: center;
             max-width: 350px;
+            margin-top: 50px;
+            border: 1px solid black;
+            border-radius: 30px;
+            background-color: antiquewhite;
         }
+        .btn{
+            background-color: green;
+        }
+        h2{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #h4{
+            margin-left: 5px;
+        }
+
     </style>
 </head>
 
 <body>
+    
     <div class="container">
-        <h2>Calculator</h2>
+        <h2>BMI Calculator</h2><br> 
         <div class="row">
             <h4>Weight:</h4>
             <input type="number" name="" id="suly">
         </div>
 
         <div class="row">
-            <h4>Height</h4><br>
+            <h4 id="h4">Height:</h4>
             <input type="number" name="" id="magassag">
         </div>
 
@@ -45,7 +60,7 @@
             { min: 18.6, max: 24.9, categ: "normal", emoji: "😒" },
             { min: 25, max: 29.9, categ: "overweight", emoji: "💪" },
             { min: 30, max: 34.9, categ: "obese", emoji: "🐖" },
-            { min: 35, max: 100, categ: "morbidly a beast", emoji: "🦍" }
+            { min: 35, max: 100, categ: "That's not even possible", emoji: "🦍" }
         ]
     function calculate() {
             let suly = document.getElementById("suly").value
